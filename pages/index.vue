@@ -1,0 +1,214 @@
+<template>
+  <main class='main-content'>
+    <div class="center">
+      <div class="avatar-information">
+        <div class="avatar wow bounceInLeft" data-wow-delay="500ms" data-wow-duration="2s">
+          <img src='~assets/image/avatar.jpg' alt="Фото профіля"/>
+        </div>
+
+        <div class="information">
+          <h1>
+            Junior React JS, Middle Front-end, Senior HTML-верстальщик
+          </h1>
+
+          <section class="pane wow slideInLeft">
+            <h3>
+              <span class="gold-text">П.І.Б.: </span>
+              Липянець Сергій Леонідович
+            </h3>
+
+            <h4>
+              <span class="gold-text">Дата народження: </span>
+              17.03.1990
+            </h4>
+          </section>
+
+          <section class="pane wow slideInRight">
+            <h4>
+              <span class="gold-text">Вид зайнятості: </span>
+              повна зайнятість, дистанційна робота
+            </h4>
+
+            <h4>
+              <span class="gold-text">Бажане місто роботи: </span>
+              Після місяця роботи дестанційно готовий до переїзду
+            </h4>
+          </section>
+
+        </div>
+      </div>
+
+      <div class="pane print-hidden">
+        <h4>
+          <span class="gold-text">Місто проживання: </span>
+          Житомир
+        </h4>
+
+        <h4>
+          <span class="gold-text">Skype: </span>
+          serg_uk_zt
+        </h4>
+
+        <h4>
+          <span class="gold-text">Телефон: </span>
+          +380 98 96 96 952
+        </h4>
+
+        <h4>
+          <span class="gold-text">Email: </span>
+          main.email.seryoga@gmail.com
+        </h4>
+
+        <h4>
+          <span class="gold-text">Робочі години: </span>
+          Пн-Пт: 10:00 - 19:00 <br/>
+          <span class="gold-text">Для пропозицій від яких не зможу відмовитися, на зв`язку цілодобово :)</span>
+        </h4>
+      </div>
+
+      <h2>Досвід роботи</h2>
+
+      <ul class="pane wow slideInLeft">
+        <li>
+          <span class="gold-text">з 02.2013 по 05.2018</span>
+        </li>
+        <li>
+          <span class="gold-text">Freelance,</span> Житомир (Front-end), декілька веб-студій(дистанційна)
+          <br/>
+          <br/>
+        </li>
+        <li>
+          <span class="gold-text">з 05.2018 по 02.2019 </span>
+        </li>
+        <li>
+          <span class="gold-text">Агентство Дмитрия Димбровского,</span> FullStack: верстка по макетам PSD,
+          email розсилка; програмування як лендінгів(відправка форм, js функціонал) так і робота з популярними
+          CMS; беру активну участь в дизайні десктоп версії макетів, адаптація і дизайн сайтів власний без
+          допомоги дизайнера, також роблю дизайн сторінок "Дякую"; всі можливі задачі з роботую різноманітних
+          хостенгів, доменів, робота з БД; Робота з чужим кодом. Налаштування Яндекс метрики, Google Аналитик.
+          Постійно робота над декількома проетами.
+        </li>
+      </ul>
+
+      <h2>Освіта</h2>
+
+      <ul class="pane wow slideInRight">
+        <li>
+          <span class="gold-text">Житомирський Державний Технологічний Університет</span>
+        </li>
+        <li>
+          <span class="gold-text">Факультет:</span> інформаційно комп`ютерних технологій
+        </li>
+        <li>
+          <span class="gold-text">Вища,</span> з 09.2007 по 05.2012 (4 роки 8 місяців)
+        </li>
+      </ul>
+
+      <h2>Навички роботи з комп’ютером</h2>
+
+      <section class="pane wow slideInLeft">
+        <p>
+          <span class="gold-text">Вмію якісно і валідно верстати.</span> Розумію особливості верстки
+          кросбравзерно, кросплатформенно, адаптивно, для мобільних пристроїв, Firefox, Opera, Safari, Chrome.
+        </p>
+
+        <p>
+          <span class="gold-text">Постійно використовую:</span> HTML5, CSS3, Pug, SCSS or Less, jQuery, Grid, FlexBox, ReactJS, ES6;<br/>
+          Розуміння принципу роботи збирачів проекту <span class="gold-text">(grunt, gulp),</span> вмію
+          верстати під pixel perfect responsive.
+        </p>
+
+        <p>
+          <span class="gold-text">CMS: </span> <span title="3+">WordPress</span>, <span
+          title="3+">OpenCart</span>, <span title="50+">SmartCJ</span>, <span title="1">Django CMS</span>
+        </p>
+
+        <p>
+          <span class="gold-text">Маю розуміння: </span> <span
+          title="Коли працював контет менеджером багато данних вносив">MySql</span>, БЕМ, TypeScript, JSF, Vue.js
+        </p>
+
+        <p>
+          <span class="gold-text">Зараз в процесі вивчення: ReactJs, React Native, ES6</span>
+        </p>
+
+        <p class="gold-text">
+          Преоритетним на даний момент є для мене розвиток і практичне використання: ES6, ReactJs, React Native.
+        </p>
+
+        <p>
+          <span class="gold-text">ReactJs</span> - вже добре розумію що таке компонети(класові, функціональні), роботу з props, житєвий цикл
+          компонентів, ref, dispatch і action, reducer (redux), redux-thunk, redux-form, axios, Redirect, setState,
+          REST API (get, post, delete, put - мінімум 2 рази кожен використовував в роботі)...
+          http://prntscr.com/ow0pzz
+        </p>
+
+        <p>
+          <span class="gold-text">Працюю з графічними редакторами:</span> Adobe Photoshop
+        </p>
+
+        <p>
+          <span class="gold-text">Працюю з редакторами кода:</span> SublimeText3, PhpStorm<br/>
+          Добре володію ПК, Microsoft Office.
+        </p>
+
+      </section>
+
+      <h2>Знання мов</h2>
+
+      <ul class="pane wow slideInRight">
+        <li>
+          <span class="gold-text" title="Не спілкуюся, більшість друзів російськомовні">Російська</span> —
+          експерт
+        </li>
+        <li>
+          <span class="gold-text" title="Рідна, з недавнього часу активно вдосконалюю">Українська</span> —
+          експерт
+        </li>
+        <li>
+          <span class="gold-text" title="Нажаль майже не спілкуюся :(">Англійська</span> — середній
+        </li>
+      </ul>
+
+      <h2>Додаткова інформація</h2>
+
+      <section class="pane wow slideInLeft">
+        <p>
+          Знайшов роботу яка приносить задоволення, коли починаю працювати, повністю поглинаюся в процес!
+        </p>
+
+        <p>
+          <span class="gold-text">Шукаю роботу на постійній основі</span> з офіційним працевлаштуванням і
+          Кар'єрним ростом.
+        </p>
+
+        <p>
+          Більшість часу працював, і я <span class="gold-text"
+                                             title="Декілька веб студій, підтримка сайтів, робота з чужим кодом. Все не згадати...">Маю поняття як потрібно працювати віддалено,</span> ставлюся
+          до цього відповідально. Є веб-камера, високошвидкісний інтернет, все що потрібно для зв'язку.
+        </p>
+
+        <p>
+            <span
+              class="gold-text">Готовий до переїзду Тільки після деякого часу співробітництва віддалено</span> або
+          у випадку забезпечення мого комфортного проживання!
+        </p>
+
+        <p>
+          <span class="gold-text" title="50+">Виконав велику кількість адаптивних сайтів, навіть приблизно кількість сказати важко, більшість це 2-3 проекта на місяць, не так часто проети по 2-6 місяців. Постійно вдосконалюю знання навіть коли постійного навантаження немає.</span> Декілька
+          робіт вказано на моєму сайті в розділі <a href="/portfolio.html" title="Go...">порфоліо.</a> <span
+          class="gold-text">Кожен проект для мене є важливим, Головне якість. Не використовую Bootsrap чи БЕМ так як вважаю що це більше для недосвідчених розробників.</span>
+        </p>
+
+        <p>
+          Обов'язкова оплата перший місяць кожну неділю. Готовий відразу працювати на проекті в команді.
+        </p>
+      </section>
+    </div>
+  </main>
+</template>
+
+
+<script>
+export default {}
+</script>
