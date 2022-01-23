@@ -1,0 +1,17 @@
+@use '../abstracts/global-variables' as *;
+
+.__nuxt,.__layout, .wrapper{
+  height: 100%;
+}
+.print-hidden{
+  display: none;
+}
+.text-center{
+  text-align: center;
+}
+.gold-text{
+  color: $gold;
+}
+.text-white{
+  color: $text-white;
+}

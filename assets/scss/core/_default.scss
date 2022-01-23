@@ -1,0 +1,445 @@
+@use "../abstracts/global-variables" as *;
+@use "../abstracts/mixins/media-queries" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {color:$gray;}
+::-moz-placeholder          {color:$gray;}
+:-moz-placeholder           {color:$gray;}
+:-ms-input-placeholder      {color:$gray;}
+::-webkit-scrollbar{
+  background: #636363;
+}
+::-webkit-scrollbar-button{
+  background: #868686;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb{
+  background: #fff;
+  cursor: pointer;
+
+  &:hover{
+    background: #434343;
+  }
+}
+::selection {
+  background: #676767;
+}
+
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  font-weight: normal;
+}
+
+body{
+  color: $text-white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-4;
+  text-shadow: 0 1px 3px rgba($black, .3);
+  overflow-x: hidden;
+  padding-top: 50px;
+  height: 100%;
+
+  &:after{
+    content: '';
+    background: rgba($black, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  &:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: url(../image/main-bg.jpg) top center/ cover;
+    z-index: 1;
+  }
+  & > *{
+    position: relative;
+    z-index: 1;
+  }
+}
+*{
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+img{
+  max-width: 100%;
+  display: inline-block;
+}
+a{
+  display: inline-block;
+  color: $gold;
+  text-decoration: none;
+  transition: .3s;
+}
+h1, h2, h3, h4, h5, h6{
+  margin-top: 0;
+  font-weight: normal;
+}
+h1, h2{
+  color: $white;
+  text-shadow: 1px 1px 14px $black;
+}
+h1{
+  font-size: 52px;
+  margin-bottom: 25px;
+  line-height: 50px;
+}
+h2{
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+h3{
+  font-size: 30px;
+}
+h4{
+  font-size: 24px;
+}
+h5{
+  font-size: 20px;
+}
+h6{
+  font-size: 14px;
+}
+@media screen and (max-width: 780px){
+  body:before{
+    background-image: url(../image/main-bg-mb.jpg);
+  }
+}
+@media screen and (max-width: 700px){
+  header nav{
+    ul{
+      justify-content: center;
+    }
+    a{
+      font-size: 16px;
+      padding: 5px 10px;
+    }
+  }
+  main{
+    padding: 25px 0;
+
+    .avatar-information{
+      flex-direction: column;
+
+      .information{
+        flex: 1 0 300px;
+      }
+    }
+  }
+  h1{
+    font-size: 37px;
+    line-height: 40px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  h4{
+    font-size: 20px;
+  }
+}
+@include media(500px){
+  h1{
+    font-size: 27px;
+    line-height: 35px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 16px;
+  }
+  .pane{
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media print{
+  .gold-text{
+    color: $gold;
+  }
+  body{
+    color: $black;
+    background: transparent;
+  }
+  nav{
+    display: none;
+  }
+  *{
+    box-shadow: none!important;
+    text-shadow: none!important;
+  }
+  h1{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  h2{
+    font-size: 16px;
+  }
+  h4{
+    font-size: 12px;
+  }
+  .pane{
+    padding: 5px;
+    background: transparent;
+  }
+  #map{
+    display: none;
+  }
+  .print-hidden{
+    display: block;
+  }
+}
+ul{
+  list-style: none;
+}
+p{
+  & + p{
+    margin-top: 10px;
+  }
+}
+button{
+  border: none;
+  cursor: pointer;
+}
+form{
+  max-width: 500px;
+  margin: 0 auto;
+}
+input{
+  height: 40px;
+}
+[type="submit"]{
+  cursor: pointer;
+
+  &:hover{
+    background: #3f1f1f;
+    border-color: rgba(255, 204, 0, 0.15);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+  }
+}
+hr{
+  margin: 20px 0;
+  border-top: 1px solid $gold;
+  border-bottom: 1px solid $black;
+  box-shadow: 0 0 5px $gold;
+}
+textarea{
+  max-width: 100%;
+  outline: none;
+  padding: 15px;
+  font-family: $font-4;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+button,
+label,
+textarea,
+select {
+  appearance: none;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+label{
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  transition: .3s;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  height: 40px;
+  padding: 0 12px;
+  background: #FAFBFB;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: .3s;
+
+  & + input{
+    margin-top: 20px;
+  }
+
+  &.value{
+    background: $white;
+  }
+
+  // hide cross icon in Edge
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.error{
+    border: 1px solid $red;
+    color: $red;
+  }
+
+  // hide box-shadow of empty required input in FF
+  &:required:invalid {
+    box-shadow: none;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+textarea {
+  max-width: 100%;
+  resize: none;
+  min-height: 100px;
+  padding: 12px;
+  outline: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: $gold;
+  transition: .3s;
+
+  &:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p{
+  & + p{
+    margin-top: 20px;
+  }
+  & + h4{
+    margin-top: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

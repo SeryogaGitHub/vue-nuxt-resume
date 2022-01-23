@@ -1,0 +1,6 @@
+@use "../abstracts/mixins/index" as *;
+
+@include font-face(
+  "Lato",
+  "../fonts/lato-regular"
+);
